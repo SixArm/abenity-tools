@@ -1,0 +1,4 @@
+#!/bin/sh
+curl -sSL -X GET -u "${ABENITY_PERKS_API_USERNAME}:${ABENITY_PERKS_API_PASSWORD}" \
+"${ABENITY_PERKS_API_BASE}offers.json?category_id=${category_id}" \
+-o offers_with_category_id_${category_id}.json

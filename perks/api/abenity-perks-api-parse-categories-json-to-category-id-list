@@ -1,0 +1,4 @@
+#!/bin/sh
+cat categories.json | 
+jq -r 'recurse(.[]?) | .id? | select(. != null)' | 
+sort -n
